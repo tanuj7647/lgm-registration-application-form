@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-color: #1a75ff;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.form-container, .enrolled-container {
+    padding: 30px;
+    width: 50%;
+}
+
+.divider {
+    width: 5px;
+    background-color: #99ccff;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    flex: 1;
+    margin-right: 15px;
+}
+
+input[type="text"], input[type="email"], input[type="url"] {
+    padding: 12px;
+    border: 1px solid #b3d9ff;
+    border-radius: 8px;
+    flex: 2;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus {
+    border-color: #66b3ff;
+    outline: none;
+}
+
+.gender-container, .skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.enroll-button {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+.enroll-button:hover {
+    background-color: #004d99;
+    transform: scale(1.05);
+}
+
+.clear-button {
+    background-color: #ff3300;
+    color: #fff;
+}
+
+.clear-button:hover {
+    background-color: #cc2900;
+    transform: scale(1.05);
+}
+
+.enrolled-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.enrolled-container th, .enrolled-container td {
+    border: 1px solid #cce6ff;
+    padding: 12px;
+    text-align: left;
+}
+
+.enrolled-container th {
+    color: white;
+    background-color: #3399ff;
+}
+
+.enrolled-container tr:nth-child(odd) {
+    background-color: #f2f9ff;
+}
+
+.enrolled-container tr:nth-child(even) {
+    background-color: #e6f3ff;
+}
+
+.enrolled-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+@keyframes buttonAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.enroll-button:active {
+    animation: buttonAnimation 0.2s;
+}

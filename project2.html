@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Student Enrollment Form</h1>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <form id="enrollmentForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" maxlength="50" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address" maxlength="100" required>
+                </div>
+                <div class="form-group">
+                    <label for="website">Website:</label>
+                    <input type="url" id="website" name="website" placeholder="Enter your website URL">
+                </div>
+                <div class="form-group">
+                    <label for="imageLink">Image link:</label>
+                    <input type="url" id="imageLink" name="imageLink" placeholder="Enter image URL" required>
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="gender-container">
+                        <label><input type="radio" name="gender" value="Male" required> Male</label>
+                        <label><input type="radio" name="gender" value="Female" required> Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Skills:</label>
+                    <div class="skills-container">
+                        <label><input type="checkbox" name="skills" value="HTML" required> HTML</label>
+                        <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+                        <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+                    </div>
+                </div>
+                <div class="form-group button-group">
+                    <button type="submit" class="enroll-button">Enroll Student</button>
+                    <button type="reset" id="clearButton" class="clear-button">Clear</button>
+                </div>
+            </form>
+        </div>
+        <div class="divider"></div>
+        <div class="enrolled-container">
+            <h2>Enrolled Students</h2>
+            <table id="enrolledStudents">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="project2.js"></script>
+</body>
+</html>
